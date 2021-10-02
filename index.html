@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO LIST</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.0-canary.14/tailwind.min.css"
+      integrity="sha512-zXhmHxwXn8kUvZApt3iuxFG7cAHa2wongnyRnq2uAxppI5t/J5pz7I0mrm409qZaAu4KLhRtFTaNhO86OWQv5A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="body-font" style="padding: 20px 0px">
+      <div class="container items-center">
+        <span
+          class="ml-3 text-xl xl:block lg:hidden"
+          id="date"
+          style="text-align: center; color: black;; font-family: 'Poppins'"
+        ></span>
+      </div>
+    </header>
+
+    <div id="content">
+      <div id="title"></div>
+      <div id="add_todo">
+        <input
+          id="add_todo_title"
+          type="text"
+          name="title"
+          placeholder="e.g. Do Homework"
+        />
+        <button class="primary" id="add_todo_button">Add</button>
+      </div>
+      <div id="todo_list"></div>
+    </div>
+    <footer>
+      <script src="app.js" type="text/javascript"></script>
+    </footer>
+  </body>
+</html>
